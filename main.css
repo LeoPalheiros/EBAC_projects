@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    color: #d32f2f;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #ff7f50;
+    color: #000;
+}
+
+.dropdown-menu a {
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ff7f50;
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+section {
+    padding: 50px 0;
+}
+
+#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+#sobre .col-md-6 {
+    flex: 1;
+    max-width: 50%;
+}
+
+#sobre img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#passeios .col-md-3 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#contato form {
+    width: 60%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contato textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e0a800;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    #sobre {
+        display: flex;
+    }
+
+    #passeios .col-md-3 {
+        flex: 0 0 100%;
+    }
+
+    #contato form {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #sobre {
+        flex-direction: column;
+    }
+
+    #sobre img {
+        max-width: 300px
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .carousel-inner img {
+        height: 200px;
+    }
+
+    #contato form {
+        width: 100%
+    }
+}
